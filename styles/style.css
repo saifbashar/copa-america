@@ -68,7 +68,6 @@ header {
 }
 header:hover .banner {
   transform: rotate(20deg);
-  overflow: hidden;
 }
 
 .header-title {
@@ -113,6 +112,7 @@ header:hover .banner {
 .player-info p {
   margin-top: 10px;
   margin-bottom: 0px;
+  font-size: 16px;
 }
 .player-info {
   width: 300px;
