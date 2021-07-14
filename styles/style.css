@@ -67,7 +67,7 @@ header {
   overflow: hidden;
 }
 header:hover .banner {
-  transform: rotate(10deg);
+  transform: rotate(20deg);
   overflow: hidden;
 }
 
