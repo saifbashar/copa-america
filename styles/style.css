@@ -89,7 +89,8 @@ header:hover .banner {
 .players-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
 }
 .player {
   display: flex;
@@ -232,6 +233,9 @@ footer {
   .players-section {
     grid-template-columns: repeat(1, 1fr);
   }
+  .player {
+    padding: 15px 14px 33px 14px;
+  }
 
   /* highlight section */
 
@@ -303,3 +307,5 @@ footer {
     height: 258px;
   }
 }
+
+/* For small Laptop */
