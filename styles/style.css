@@ -94,22 +94,6 @@ header {
 
 /* highlights section styles */
 
-.highlight-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0px;
-  margin-top: 165px;
-}
-.highlight-title {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 469px;
-}
-.highlight-img img {
-  width: 567px;
-  height: 427px;
-}
 /* footer Style */
 footer {
   display: flex;
@@ -152,23 +136,6 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .highlight-section {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 29px;
-    margin: 4%;
-    margin-top: 165px;
-  }
-  .highlight-title {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .highlight-img img {
-    width: 328px;
-    height: 248px;
-  }
-
   .footer-logo img {
     width: 200px;
     height: 70px;
@@ -177,7 +144,16 @@ footer {
 
 /* For Tablets screen */
 @media only screen and (max-width: 992px) and (min-width: 689px) {
-  .players {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .players-section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
