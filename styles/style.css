@@ -64,7 +64,6 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 70px;
-  position: relative;
 }
 header:hover .banner {
   transform: rotate(20deg);
@@ -76,6 +75,7 @@ header:hover .banner {
 }
 .banner {
   transition: transform 3s;
+  position: relative;
 }
 .banner img {
   width: 556.01px;
