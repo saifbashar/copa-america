@@ -12,12 +12,55 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.button {
+  display: flex;
+  justify-content: center;
 
+  align-items: center;
+  padding: 10px 24px;
+  background: #e02c6d;
+  width: 173px;
+  height: 44px;
+  margin-top: 27px;
+}
+.fas.fa-arrow-right {
+  color: white;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+h1 {
+  font-size: 64px;
+  color: white;
+  margin: 0px;
+}
+h2 {
+  font-size: 48px;
+  margin: 0px;
+}
 /*  header styles */
+header {
+  background-color: #2d25a0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 70px;
+}
 
-/*    main section styles  */
+.header-title {
+  margin-left: 156px;
+  margin-right: 102px;
+}
+.banner img {
+  width: 556.01px;
+  height: 438px;
+}
 
-.players {
+/*  players section styles  */
+
+.players-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -28,14 +71,14 @@ main {
   width: 315px;
   height: 458px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  padding: 15px;
+  padding: 8px 7.5px;
 }
 
 .player-img img {
   width: 300px;
   height: 256px;
 }
-.player-info h2 {
+.player-info h3 {
   margin-top: 16px;
   margin-bottom: 0px;
   font-weight: bold;
@@ -49,9 +92,92 @@ main {
   width: 300px;
 }
 
+/* highlights section styles */
+
+.highlight-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin-top: 165px;
+}
+.highlight-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 469px;
+}
+.highlight-img img {
+  width: 567px;
+  height: 427px;
+}
+/* footer Style */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 158px;
+}
+
+.footer-logo img {
+  width: 483.87px;
+  height: 110px;
+}
+
+/* Media Queries */
 /* For Mobile Screen */
 @media only screen and (max-width: 688px) {
-  .players {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+  .header-title {
+    margin-left: 16px;
+    margin-bottom: 50px;
+  }
+  .banner img {
+    width: 329px;
+    height: 259.17px;
+  }
+
+  .players-section {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlight-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 29px;
+    margin: 4%;
+    margin-top: 165px;
+  }
+  .highlight-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .highlight-img img {
+    width: 328px;
+    height: 248px;
+  }
+
+  .footer-logo img {
+    width: 200px;
+    height: 70px;
+  }
+}
+
+/* For Tablets screen */
+@media only screen and (max-width: 992px) and (min-width: 689px) {
+  .players {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
